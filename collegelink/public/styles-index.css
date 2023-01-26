@@ -1,0 +1,220 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #f6f6f2;
+    color: #1b1b2f;
+}
+
+/* ------------------ GLOBAL ELEMENTS */
+
+@font-face {
+    font-family: 'RobotoR';
+    font-weight: 400;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'RobotoL';
+    font-weight: 300;
+    src: url('assets/fonts/Roboto-Light.ttf');
+}
+
+body {
+    background: #f6f6f2;
+    color: #1b1b2f;
+    font-family: 'RobotoL', sans-serif;
+    font-weight: 300;
+}
+
+a,
+a:active,
+a:visited,
+a:focus {
+    color: #fff !important;
+    text-decoration: none;
+    padding-left: 35px;
+}
+a:hover {
+    color: #E43F5A !important;
+    text-decoration: none !important;
+}
+
+button,
+input[type="button"] {
+    background: #1f4068;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+    button:hover,
+    input[type="button"]:hover {
+        background: #E43F5A;
+        text-decoration: none;
+    }
+    button a,
+    button a:hover,
+    button a:active,
+    button a:visited,
+    button a:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'RobotoR';
+}
+
+body > main {
+    margin: 0 0 0 0;
+}
+
+body > footer {
+    background: #fff;
+    border-top: 3px solid #808080;
+}
+    body > footer p {
+        color: #616161;
+        font-size: 13px;
+        text-align: center;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+    body > header {
+        box-shadow: 0px 4px 1px 2px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        background: #1f4068;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99999;
+        padding-top: 15px;
+    }
+    
+        body > header .main-logo {
+            color: white;
+            position: absolute;
+            font-weight: 600; 
+            font-size: large;
+        }
+        body > header ul,
+        body > header ul li {
+            list-style: none;
+            list-style-type: none;
+            display: inline-block;
+            font-weight: 300;
+        }
+        
+
+/* ------------------ HOMEPAGE */
+
+section.hero {
+    background: #fff;
+    background-size: 100%;
+    padding: 155px 0 300px 0;
+}
+    section.hero form {
+        background: #162447;
+        width: 60%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 25px;
+        border-radius: 12px;
+    }
+        section.hero form .action {
+            margin-top: 10px;
+        }
+        section.hero form button {
+            border: none;
+            padding: 12px 25px 12px 25px;
+            font-size: 16px;
+            line-height: 16px;
+            font-family: 'RobotoL';
+            border-radius: 8px;
+            background: #1f4068;
+            color: #fff;
+            background-size: 18px;
+        }
+        section.hero form button:hover {
+            background: #E43F5A;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    section.hero h1 {
+        color: #1f4068;
+        text-align: center;
+    }
+
+    fieldset {
+        text-align: center;
+    }
+
+    #sel1-error {
+        color: red!important;
+    }
+
+    .form-group {
+        width: 40%;
+        text-align: center;
+        display:inline-block;
+        padding: 20px;
+    }
+
+    .form-control {
+        text-align: center;
+        
+    }
+ 
+
+/* ------------------ MEDIA QUERIES */
+
+@media (max-width: 1004px) {
+    .container {
+        width: 804px;
+    }
+    section.hotel-list {
+        width: 550px;
+    }
+    iframe {
+        max-width: 100%;
+    }
+    section.hero {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 804px) {
+    .container {
+        width: 100%;
+    }
+    aside.hotel-search,
+    section.hotel-list {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+        article.hotel h1 {
+            font-size: 22px;
+            line-height: 22px;
+        }
+        article.hotel h2 {
+            font-size: 18px;
+            line-height: 18px;
+        }
+    section.hero form {
+        width: 80%;
+    }
+        section.hero form input,
+        section.hero form select,
+        section.hero form textarea {
+            width: 100%;
+        }
+}
